@@ -1,0 +1,45 @@
+@use './variables' as *;
+
+@mixin metallic-surface {
+  background: linear-gradient(
+    145deg,
+    rgba(25, 25, 25, 0.92) 0%,
+    rgba(16, 16, 16, 0.96) 55%,
+    rgba(11, 11, 11, 0.98) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 24px 48px -24px rgba(0, 0, 0, 0.85);
+}
+
+@mixin ember-glow-border {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      rgba($accent-red, 0.55) 0%,
+      rgba($accent-orange, 0.25) 35%,
+      rgba(255, 255, 255, 0.06) 70%,
+      rgba($accent-highlight, 0.4) 100%
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.45;
+    transition: opacity 280ms $ease-out-expo;
+  }
+
+  &:hover::before,
+  &:focus-within::before {
+    opacity: 1;
+  }
+}

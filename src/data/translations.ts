@@ -1,0 +1,346 @@
+export type Language = 'uz' | 'en';
+
+export const translations = {
+  uz: {
+    nav: {
+      home: 'Bosh sahifa',
+      about: 'Men haqimda',
+      skills: "Ko'nikmalar",
+      projects: 'Loyihalar',
+      services: 'Xizmatlar',
+      process: 'Jarayon',
+      contact: "Bog'lanish",
+    },
+    hero: {
+      badge: 'LOYIHALAR UCHUN OCHIQ',
+      name: "NE'MATOV ISLOMJON",
+      title: 'FULL-STACK DEVELOPER',
+      description:
+        "Men zamonaviy, tezkor, interaktiv va foydalanuvchilar uchun qulay web-ilovalar yaratishga ixtisoslashgan Full-Stack dasturchiman.",
+      ctaProjects: "LOYIHALARIMNI KO'RISH",
+      ctaContact: "MEN BILAN BOG'LANISH",
+      scrollDown: 'Pastga aylantiring',
+      portraitCaption: "Full-Stack Dasturchi",
+      portraitMissingTitle: "Portret rasmi joylashtirilmagan",
+      portraitMissingHint:
+        "Asl suratingizni public/images/islomjon.jpg manziliga joylashtiring — sahifa avtomatik ko'rsatadi.",
+      portraitPreviewBtn: 'Mahalliy rasmni sinab ko‘rish',
+    },
+    about: {
+      kicker: "01 / TANISHUV",
+      title: 'MEN HAQIMDA',
+      subtitle: 'ABOUT ME',
+      intro:
+        "Men Ne'matov Islomjon. Zamonaviy web texnologiyalariga qiziqadigan, frontend va backend yo'nalishlarida ishlaydigan dasturchiman. Men uchun har bir loyiha shunchaki kod yozish emas, balki foydalanuvchi uchun qulay, tezkor va chiroyli raqamli mahsulot yaratishdir.",
+      slogan: "G'oyalarni raqamli tajribaga aylantiramiz.",
+      rolesLabel: "Yo'nalishlar",
+      downloadCv: 'CV Yuklab olish',
+      cvMissingTitle: 'CV fayli hali biriktirilmagan',
+      cvMissingText:
+        "Haqiqiy PDF rezyumeni public/cv/Nematov_Islomjon_CV.pdf manziliga joylashtiring va src/data/siteConfig.ts ichida cvUrl qiymatini yoqing. Soxta CV yaratilmaydi.",
+      pillars: [
+        {
+          number: '01',
+          title: 'Kreativ fikrlash',
+          subtitle: 'Creative Thinking',
+          description:
+            "Har bir interfeysga muhandislik aniqligi va o'ziga xos vizual yondashuv bilan qarash.",
+        },
+        {
+          number: '02',
+          title: 'Zamonaviy dasturlash',
+          subtitle: 'Modern Development',
+          description:
+            "React.js, zamonaviy CSS/SCSS arxitekturasi va PHP yordamida barqaror tizimlar qurish.",
+        },
+        {
+          number: '03',
+          title: "Doimiy o'rganish",
+          subtitle: 'Continuous Learning',
+          description:
+            "Har bir yangi loyihada unumdorlik, interaktivlik va kod sifatini yanada oshirib borish.",
+        },
+      ],
+      timelineTitle: "Asosiy yo'nalish fokuslari",
+      timeline: [
+        {
+          phase: 'Frontend',
+          title: 'Interaktiv interfeyslar',
+          detail: 'HTML5, CSS3, SCSS, JavaScript va React.js asosida tezkor hamda moslashuvchan UI.',
+        },
+        {
+          phase: 'Backend',
+          title: 'Server tomoni mantiqi',
+          detail: "PHP yordamida ma'lumotlar oqimi, formalar va server jarayonlarini boshqarish.",
+        },
+        {
+          phase: '3D & Motion',
+          title: 'Zamonaviy web-tajriba',
+          detail: 'Three.js, GSAP va Framer Motion bilan jonli, yengil va estetik animatsiyalar.',
+        },
+      ],
+    },
+    skills: {
+      kicker: "02 / TEXNIK STEK",
+      title: "TEXNOLOGIYALAR VA KO'NIKMALAR",
+      subtitle: "Frontend va backend ishlanmalarida qo'llaniladigan asosiy texnologiyalar.",
+      frontendLabel: 'FRONTEND',
+      backendLabel: 'BACKEND',
+    },
+    projects: {
+      kicker: '03 / PORTFEL',
+      title: 'MENING LOYIHALARIM',
+      subtitle: "Har bir loyiha — yangi g'oya, yangi tajriba va yangi imkoniyat.",
+      filters: {
+        all: 'Barchasi',
+        education: "Ta'lim",
+        ecommerce: 'Elektron tijorat',
+        games: "O'yinlar",
+        webapp: 'Web-ilovalar',
+      },
+      liveDemo: 'Jonli Demo',
+      viewProject: "Loyihani ko'rish",
+      viewAll: "Barcha loyihalarni ko'rish",
+      backHome: 'Bosh sahifaga qaytish',
+      artworkDisclaimer: 'Loyiha mavzusidagi konsept vizual',
+      modalTechTitle: "Qo'llanilgan texnologiyalar",
+      modalHighlightsTitle: 'Asosiy xususiyatlar',
+      openExternal: 'Saytni ochish',
+      close: 'Yopish',
+    },
+    services: {
+      kicker: '04 / XIZMATLAR',
+      title: 'MENING XIZMATLARIM',
+      subtitle: "G'oyadan tayyor web-mahsulotgacha bo'lgan asosiy ishlab chiqish yo'nalishlari.",
+    },
+    process: {
+      kicker: '05 / ISH USLUBI',
+      title: 'ISHLASH JARAYONIM',
+      subtitle: "Har bir loyihani bosqichma-bosqich, tartibli va sifat nazorati bilan amalga oshirish.",
+    },
+    terminal: {
+      kicker: '06 / INTERAKTIV KONSOL',
+      title: 'DEVELOPER TERMINAL',
+      subtitle: "Buyruqlarni kiriting yoki tezkor tugmalardan foydalaning: help, about, skills, projects, contact, clear",
+      placeholder: 'Buyruq yozing (masalan: help)...',
+      welcome:
+        "Ne'matov Islomjon interaktiv terminaliga xush kelibsiz. Mavjud buyruqlar uchun 'help' deb yozing.",
+      unknown: "Noma'lum buyruq. Mavjud buyruqlar ro'yxati uchun 'help' kiriting.",
+    },
+    contact: {
+      kicker: '07 / ALOQA',
+      title: 'LOYIHANGIZNI BIRGALIKDA YARATAMIZ!',
+      subtitle: "Yangi g'oyangiz bormi? Keling, uni zamonaviy raqamli mahsulotga aylantiramiz.",
+      fields: {
+        name: 'Ismingiz',
+        namePlaceholder: 'Masalan, Azizbek',
+        email: 'Email manzilingiz',
+        emailPlaceholder: 'siz@example.com',
+        subject: 'Mavzu',
+        subjectPlaceholder: 'Web-sayt yoki hamkorlik haqida',
+        message: 'Xabaringiz',
+        messagePlaceholder: "Loyihangiz haqida qisqacha yozing...",
+      },
+      submit: 'XABAR YUBORISH',
+      sending: 'Tekshirilmoqda...',
+      errors: {
+        nameRequired: 'Iltimos, ismingizni kiriting.',
+        emailRequired: 'Iltimos, email manzilingizni kiriting.',
+        emailInvalid: "Iltimos, to'g'ri email manzil kiriting.",
+        subjectRequired: 'Iltimos, xabar mavzusini kiriting.',
+        messageRequired: "Xabar kamida 10 ta belgidan iborat bo'lishi kerak.",
+      },
+      configRequiredTitle: 'Backend / Email integratsiyasi sozlanmagan',
+      configRequiredBody:
+        "Shakl ma'lumotlari muvaffaqiyatli tekshirildi, ammo haqiqiy xabar yuborish uchun VITE_CONTACT_ENDPOINT yoki src/data/siteConfig.ts ichida haqiqiy email xizmati ulanishi kerak. Soxta yuborildi xabari ko'rsatilmaydi.",
+      copyDraft: 'Xabar matnini nusxalash',
+      copiedDraft: 'Nusxalandi!',
+      sentTitle: 'Xabaringiz yuborildi!',
+      sentBody: "Murojaatingiz uchun rahmat. Tez orada javob beraman.",
+      sendErrorTitle: 'Yuborishda xatolik yuz berdi',
+      sendErrorBody: "Server bilan bog'lanib bo'lmadi. Keyinroq qayta urinib ko'ring.",
+      socialsTitle: 'Ijtimoiy tarmoqlar',
+      socialsUnconfigured:
+        "Ijtimoiy tarmoq havolalari src/data/siteConfig.ts faylida haqiqiy URL kiritilgandan so'ng bu yerda ko'rinadi.",
+    },
+    footer: {
+      role: 'FULL-STACK DEVELOPER',
+      slogan: 'Turning Ideas Into Digital Experiences.',
+      quickNav: 'Tezkor havolalar',
+      featuredProjects: 'Loyihalar',
+      backToTop: 'Yuqoriga',
+      copyright: "© 2026 Ne'matov Islomjon. Barcha huquqlar himoyalangan.",
+    },
+  },
+  en: {
+    nav: {
+      home: 'Home',
+      about: 'About',
+      skills: 'Skills',
+      projects: 'Projects',
+      services: 'Services',
+      process: 'Process',
+      contact: 'Contact',
+    },
+    hero: {
+      badge: 'AVAILABLE FOR PROJECTS',
+      name: "NE'MATOV ISLOMJON",
+      title: 'FULL-STACK DEVELOPER',
+      description:
+        "Hello! I'm Ne'matov Islomjon, a passionate Full-Stack Developer who loves transforming creative ideas into modern, fast, and interactive digital experiences.",
+      ctaProjects: 'VIEW MY PROJECTS',
+      ctaContact: 'CONTACT ME',
+      scrollDown: 'Scroll to explore',
+      portraitCaption: 'Full-Stack Developer',
+      portraitMissingTitle: 'Portrait image not placed yet',
+      portraitMissingHint:
+        'Add your real portrait file at public/images/islomjon.jpg and it will appear here automatically.',
+      portraitPreviewBtn: 'Preview local photo',
+    },
+    about: {
+      kicker: '01 / INTRODUCTION',
+      title: 'ABOUT ME',
+      subtitle: "MEN HAQIMDA",
+      intro:
+        "Hello! I'm Ne'matov Islomjon, a passionate Full-Stack Developer working across frontend and backend web development. For me, every project goes beyond writing code—it is about crafting a fast, clear, and engaging digital product for real users.",
+      slogan: 'Turning Ideas Into Digital Experiences.',
+      rolesLabel: 'Focus Roles',
+      downloadCv: 'Download CV',
+      cvMissingTitle: 'CV file not configured yet',
+      cvMissingText:
+        'Place your real PDF resume at public/cv/Nematov_Islomjon_CV.pdf and set cvUrl in src/data/siteConfig.ts. No fabricated CV is generated.',
+      pillars: [
+        {
+          number: '01',
+          title: 'Creative Thinking',
+          subtitle: 'Kreativ fikrlash',
+          description:
+            'Approaching each interface with deliberate visual hierarchy and engineering clarity.',
+        },
+        {
+          number: '02',
+          title: 'Modern Development',
+          subtitle: 'Zamonaviy dasturlash',
+          description:
+            'Building maintainable applications with React.js, structured SCSS, JavaScript, and PHP.',
+        },
+        {
+          number: '03',
+          title: 'Continuous Learning',
+          subtitle: "Doimiy o'rganish",
+          description:
+            'Refining performance, interaction craft, and architecture with every new project.',
+        },
+      ],
+      timelineTitle: 'Core engineering pillars',
+      timeline: [
+        {
+          phase: 'Frontend',
+          title: 'Interactive Interfaces',
+          detail: 'Responsive and accessible UI built with HTML5, CSS3, SCSS, JavaScript, and React.js.',
+        },
+        {
+          phase: 'Backend',
+          title: 'Server-Side Logic',
+          detail: 'Structured server processing and backend implementation powered by PHP.',
+        },
+        {
+          phase: '3D & Motion',
+          title: 'Spatial Web Craft',
+          detail: 'Expressive, hardware-conscious motion with Three.js, GSAP, and Framer Motion.',
+        },
+      ],
+    },
+    skills: {
+      kicker: '02 / TECH STACK',
+      title: 'TECHNOLOGIES & SKILLS',
+      subtitle: 'Core frontend and backend technologies used across real-world web projects.',
+      frontendLabel: 'FRONTEND',
+      backendLabel: 'BACKEND',
+    },
+    projects: {
+      kicker: '03 / PORTFOLIO',
+      title: 'MY PROJECTS',
+      subtitle: 'Every project is a new idea, a new experience, and a new opportunity.',
+      filters: {
+        all: 'All',
+        education: 'Education',
+        ecommerce: 'E-commerce',
+        games: 'Games',
+        webapp: 'Web Applications',
+      },
+      liveDemo: 'Live Demo',
+      viewProject: 'View Project',
+      viewAll: 'View All Projects',
+      backHome: 'Back to Home',
+      artworkDisclaimer: 'Original project-themed visual concept',
+      modalTechTitle: 'Technologies Used',
+      modalHighlightsTitle: 'Project Highlights',
+      openExternal: 'Open Website',
+      close: 'Close',
+    },
+    services: {
+      kicker: '04 / SERVICES',
+      title: 'MY SERVICES',
+      subtitle: 'End-to-end web development capabilities from interface architecture to optimization.',
+    },
+    process: {
+      kicker: '05 / WORKFLOW',
+      title: 'DEVELOPMENT PROCESS',
+      subtitle: 'A disciplined five-stage approach from initial discovery to production deployment.',
+    },
+    terminal: {
+      kicker: '06 / INTERACTIVE CONSOLE',
+      title: 'DEVELOPER TERMINAL',
+      subtitle: 'Type a command or click a shortcut: help, about, skills, projects, contact, clear',
+      placeholder: 'Enter command (e.g. help)...',
+      welcome:
+        "Welcome to Ne'matov Islomjon's interactive developer terminal. Type 'help' to see available commands.",
+      unknown: "Command not found. Type 'help' to list supported commands.",
+    },
+    contact: {
+      kicker: '07 / GET IN TOUCH',
+      title: "LET'S BUILD SOMETHING AMAZING.",
+      subtitle: "Have a new idea? Let's turn it into a modern digital product together.",
+      fields: {
+        name: 'Your Name',
+        namePlaceholder: 'e.g. Alex',
+        email: 'Email Address',
+        emailPlaceholder: 'you@example.com',
+        subject: 'Subject',
+        subjectPlaceholder: 'Website inquiry or collaboration',
+        message: 'Your Message',
+        messagePlaceholder: 'Tell me briefly about your project...',
+      },
+      submit: 'SEND MESSAGE',
+      sending: 'Validating...',
+      errors: {
+        nameRequired: 'Please enter your name.',
+        emailRequired: 'Please enter your email address.',
+        emailInvalid: 'Please enter a valid email address.',
+        subjectRequired: 'Please enter a subject.',
+        messageRequired: 'Message must be at least 10 characters long.',
+      },
+      configRequiredTitle: 'Email backend configuration required',
+      configRequiredBody:
+        'Your inputs passed validation, but live email delivery requires setting VITE_CONTACT_ENDPOINT or configuring siteConfig.ts. Fake delivery confirmation is intentionally disabled.',
+      copyDraft: 'Copy Message Draft',
+      copiedDraft: 'Copied!',
+      sentTitle: 'Message sent!',
+      sentBody: 'Thank you for reaching out. I will respond shortly.',
+      sendErrorTitle: 'Delivery failed',
+      sendErrorBody: 'Could not reach the configured contact endpoint. Please try again later.',
+      socialsTitle: 'Social Channels',
+      socialsUnconfigured:
+        'Social icons will appear here automatically once real profile URLs are configured in src/data/siteConfig.ts.',
+    },
+    footer: {
+      role: 'FULL-STACK DEVELOPER',
+      slogan: 'Turning Ideas Into Digital Experiences.',
+      quickNav: 'Quick Navigation',
+      featuredProjects: 'Projects',
+      backToTop: 'Back to top',
+      copyright: "© 2026 Ne'matov Islomjon. All Rights Reserved.",
+    },
+  },
+} as const;
